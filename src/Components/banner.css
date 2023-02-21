@@ -1,0 +1,16 @@
+
+
+.banner {
+   height: 10vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 19px;
+   font-family: 'Abhaya Libre';
+    
+
+}
+

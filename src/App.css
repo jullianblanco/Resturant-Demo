@@ -1,0 +1,153 @@
+@font-face {
+  font-family:'Abhaya Libre';
+  src: url('./fonts/AbhayaLibre-Regular.ttf') format('woff2');
+}
+@font-face {
+  font-family:'Poppins-SemiBold';
+  src: url('./fonts/Poppins-SemiBold.ttf') format('woff2');
+}
+@font-face {
+  font-family:'Poppins-Regular';
+  src: url('./fonts/Poppins-Regular.ttf') format('woff2');
+}
+@font-face {
+  font-family:'Poppins-Bold';
+  src: url('./fonts/Poppins-Bold.ttf') format('woff2');
+}
+@font-face {
+  font-family:'Poppins-Medium';
+  src: url('./fonts/Poppins-Medium.ttf') format('woff2');
+}
+@font-face {
+  font-family:'PortLligatSans-Regular';
+  src: url('./fonts/PortLligatSans-Regular.ttf') format('woff2');
+}
+
+
+.App {
+height: 100%;
+width: 100%;
+margin: 0;
+padding: 0;
+}
+
+.main {
+  position: relative;
+  height: 70vh;
+  width: 100%;
+}
+
+.main::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.main img {
+width: 100%;
+height: 100%;
+}
+
+.main-container {
+  position: absolute;
+  top: 0;
+  color: white;
+  font-family: 'Abhaya Libre';
+
+}
+
+.main-text {
+  width: 80%;
+}
+
+.main-btns {
+display: flex;
+position: absolute;
+justify-content: center;
+left: 50%;
+transform: translate(-50%, -50%);
+gap: 1em;
+}
+
+.menu-btn {
+  font-family: 'Abhaya Libre';
+  background-color: #ed2939;
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  border-radius: 6px;
+  width: 6rem;
+  padding: 8px;
+  cursor: pointer;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-btn1 {
+  font-family: 'Abhaya Libre';
+  border: none;
+  font-size: 1.5rem;
+  border-radius: 6px;
+  width: 6rem;
+  padding: 8px;
+  cursor: pointer;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.see-menu {
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.see-menu-btn {
+  border: none;
+  border-radius: 6px;
+  font-family: 'Poppins-Bold';
+  color: white;
+  background-color: #ed2939;
+  padding: 8px;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.see-menu img {
+  width: 100%;
+  height: 50%;
+
+}
+
+.popular-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 70px;
+  background-color: whitesmoke;
+}
+
+.popular-items img {
+  width: 15rem;
+  height: 12rem;
+  border: 1px solid black;
+  object-fit: cover;
+}
+
+.popular-items p {
+  width: 70%;
+  font-size: 13px;
+}
+

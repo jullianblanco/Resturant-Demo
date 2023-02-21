@@ -1,0 +1,206 @@
+.menuScreen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: whitesmoke;
+}
+
+.menu-description {
+    width: 100%;
+    height: 21rem;
+    display: flex;
+    flex-direction: column;
+  text-align: center;
+  align-items: center;
+  background-image: url(../images/steak3.png);
+  background-size: cover;
+  padding-bottom: 20px;
+  color: white;
+  position: relative;
+}
+
+.menu-description::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+.menu-description h1{
+    font-family: 'Poppins-SemiBold';
+    margin-top: 40px;
+    margin-bottom: 0;
+
+}
+.menu-description p{
+    font-family: 'Poppins-Medium';
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 70%;
+   color: whitesmoke;
+}
+.menu-description-text{
+ position: absolute;
+ display: flex;
+ flex-direction: column;
+ text-align: center;
+ align-items: center;
+}
+
+
+.menu-nav-screen {
+background-color: #ed2939;
+border-radius: 20px;
+display: flex;
+align-items: center;
+flex-direction: row;
+gap: .5em;
+padding: 10px;
+cursor: pointer;
+margin-bottom: 10px;
+width: 105px;
+margin-top: 50px;
+
+}
+
+.menu-nav-screen button {
+    background-color: #ed2939;
+    border: none;
+    color: white;
+    font-family: 'Poppins-SemiBold';
+    border-radius: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.expand-icon {
+height: 20px;
+width: 20px;
+margin-left: 4px;
+transition: all 0.1s ease-in-out;
+}
+
+.close-icon {
+height: 30px;
+width: 30px;
+transition: all 0.2s ease-in-out;
+}
+
+
+.menu-dropdown {
+        transition: height 0.3s ease-in-out, visibility 0s linear 0s;
+        -webkit-transition: .3s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        background-color: #ed2939;
+        height: 0px;
+        width: 80%;  
+        align-items: center;
+        font-size: 25px;
+        gap: 2em;
+        position: absolute;
+        z-index: 999;
+        top: 103%;
+        overflow: hidden;
+        opacity: 1;
+        
+    
+    }
+
+.menu-dropdown-open {
+        transition: height 0.3s ease-in-out, visibility 0s linear 0s;
+        -webkit-transition: .3s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        background-color: #ed2939;
+        height: 74%;
+        width: 80%;  
+        align-items: center;
+        font-size: 25px;
+        gap: 2em;
+        padding-top: 30px;
+        position: absolute;
+        z-index: 999;
+        top: 103%;
+   
+        overflow: hidden;
+        opacity: 1;
+        
+    
+    }
+
+      
+ 
+
+
+.menu-dropdown a {
+color: white;
+text-decoration: none;
+font-family: 'Poppins-Regular';
+display: none;
+}
+
+.menu-dropdown-open a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins-Regular';
+    }
+
+
+
+.full-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+
+
+
+.menu-items {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-top: 15px;
+}
+
+.menu-items img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Poppins-Regular';
+}
+
+.menu-item h1 {
+    font-family: 'Poppins-SemiBold';
+    font-size: 23px;
+    margin: 0;
+    margin-top: 12px;
+}
+
+.menu-item span {
+    font-size: 15px;
+    font-family: 'Poppins-Regular';
+    margin-left: 10px;
+}
+
+.menu-item p {
+margin: 0;
+margin-top: 10px;
+margin-bottom: 60px;
+font-size: 13.5px;
+}

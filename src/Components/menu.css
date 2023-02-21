@@ -1,0 +1,28 @@
+.sub-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   gap: 1.5em;
+   margin-bottom: 30px;
+}
+
+.menu-header {
+    font-family: 'Poppins-Medium';
+    margin: 0;
+    margin-top: 20px;
+    border-bottom: 2px solid black;
+}
+
+.menu-nav {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2em;
+   
+}
+
+.menu-nav a {
+    text-decoration: none;
+    color: #ed2939;
+    font-family: 'PortLligatSans-Regular';
+}

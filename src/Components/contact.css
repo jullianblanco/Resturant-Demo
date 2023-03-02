@@ -1,16 +1,14 @@
 .contact-main {
     height: 50vh;
     width: 100%;
+    background: url(../images/diner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.contact-main img {
-   height: 100%;
-   width: 100%;
-   object-fit: cover;
 }
 
 
@@ -45,7 +43,7 @@
 }
 
 .contact-text p {
-    width: 80%;
+    width: 200px;
     color: white;
     font-family: 'Poppins-Regular';
    margin-top: 4px;
@@ -74,6 +72,7 @@
 
 .favicons-contact a{
    text-decoration: none;
+   
 }
 
 .favicons-contact .instagram {
@@ -99,4 +98,46 @@
     padding: 2px;
     object-fit: contain;
     margin: 0;
+}
+
+@media (min-width: 470px) {
+    .contact-text h1 {
+      font-size: 30px;
+    }
+    .contact-text p {
+        width: 220px;
+    }
+}
+
+@media (min-width: 768px) {
+    .contact-text h1 {
+      font-size: 35px;
+    }
+    .contact-text p {
+        width: 230px;
+    }
+
+    .contact-btn {
+        font-size: 1.3rem;
+       
+        width: 7rem;
+    }
+}
+
+@media (min-width: 1160px) {
+    .contact-main {
+        height: 70vh;
+    }
+
+
+
+    .contact-text h1 {
+        font-size: 60px;
+       
+    }
+
+    .contact-text p {
+        font-size: 20px;
+        width: 290px;
+    }
 }

@@ -10,7 +10,7 @@ function Contact() {
     return (
         <section className='contact-main'>
             
-            <img className='diner' src={diner} alt="picture of our resturant" />
+            
             <div className='contact-text'>
                 <h1>Contact Us</h1>
                 <p>we are ready to take your call and give you the dining experience you deserve.</p>

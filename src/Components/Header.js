@@ -8,30 +8,27 @@ import { HashLink as Link } from 'react-router-hash-link';
 
 
 function Header() {
-  const [isNavExpanded, setIsNavExpanded] = useState(false);
-  const [showDropdown, setShowDropdown] = useState('nav-dropdown');
+
+  const [showDropdown, setShowDropdown] = useState('item');
 
   const toggleNav = () => {
-    setIsNavExpanded(!isNavExpanded);
-    setShowDropdown(showDropdown === 'nav-dropdown' ? 'nav-dropdown-open' : 'nav-dropdown');
+    setShowDropdown(showDropdown === 'item' ? 'item-active' : 'item');
   }
 
 return(
-     <header className='header'>
-       <section style={{display:'block'}} className='logo-container'>
-        <a href='/'>
-        <img className='logo' src={logo} alt="company logo" />
-        </a>
-       </section>
-       <nav className='menu-container'>
-         <img onClick={toggleNav} className={isNavExpanded ? 'close-icon-nav' : 'menu'} src={isNavExpanded ? CloseBtn : menu} alt='icon to show navigation menu'  />
-        </nav>
-        <div className={showDropdown}>
-            <Link to='/#app1'>Home</Link>
-            <Link to='/menu#menu1'>Menu</Link>
-            <Link to='/contact#contact1'>Contact</Link>
-            <Link to='/about#about1'>About</Link>
-          </div>
-     </header>
+     <nav className='header'>
+        <ul className='menu-main'>
+          <li className='logo-container'><img className='logo' src={logo} alt="logo" /></li>
+          <li className={showDropdown}><Link to='/#app1'>Home</Link></li>
+          <li className={showDropdown}><Link to='/menu#menu1'>Menu</Link></li>
+          <li className={showDropdown}><Link to='/contact#contact1'>Contact</Link></li>
+          <li className={showDropdown}><Link to='/about#about1'>About</Link></li>
+          <li className='bars' onClick={toggleNav}><img className='menu' src={menu} alt="menu" /></li>
+        </ul>
+     </nav>
 )}
 export default Header;
+
+
+
+

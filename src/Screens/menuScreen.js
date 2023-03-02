@@ -50,8 +50,8 @@ function MenuScreen() {
         </div>
 
 
-
-         <nav className='menu-nav-screen' onClick={toggleMenu}>
+      <div className='menu-nav-screen-container'>
+      <nav className='menu-nav-screen' onClick={toggleMenu}>
             <button>Menu</button>
             <img className={isMenuExpanded ? 'close-icon' : 'expand-icon'} src={isMenuExpanded ? CloseBtn : ExpandIcon} alt='icon to show navigation menu'  />
          </nav>
@@ -64,6 +64,20 @@ function MenuScreen() {
             <a href='#sides' onClick={closeDropdown}>Sides</a>
           </div>
 
+      </div>
+
+      <div className='desktop-nav'>
+        <h1>Menu</h1>
+        <ul>
+          <li> <a href='#burgers'>Burgers</a></li>
+          <li> <a href='#steaks'>Steaks</a></li>
+          <li> <a href='#chicken'>Chicken</a></li>
+          <li> <a href='#kids'>Kids Menu</a></li>
+          <li> <a href='#sides'>Sides</a></li>
+        </ul>
+
+      </div>
+        
          <div className='full-menu'>
             <h1 id='burgers' style={{textAlign: 'center', fontFamily: 'Poppins-SemiBold', margin: 10}}>Burgers</h1>
             <div className='menu-items'>

@@ -14,3 +14,9 @@
 
 }
 
+@media (min-width: 768px) {
+   .banner h4 {
+      font-size: 30px;
+   }
+}
+

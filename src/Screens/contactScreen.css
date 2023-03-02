@@ -1,20 +1,21 @@
 .ContactScreen-main {
     display: flex;
     flex-direction: column;
-    height: 100%;
-    width: 100%;
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin: auto;
+    
+    padding: 0 30px;
 }
 
 .contactScreen-info {
-width: 200px;
-height: 460px;
+
 display: flex;
 flex-direction: column;
 align-items: center;
 }
+
 
 .contactScreen-info li {
   cursor: pointer;
@@ -48,7 +49,11 @@ align-items: center;
     align-items: center;
   }
 
-
+  .contactScreen-btns {
+    width: 100%;
+    margin-top: 20px;
+    max-width: 350px;
+  }
 
 .input {
 border: none;
@@ -56,6 +61,7 @@ background-color: whitesmoke;
 margin-bottom: 10px;
 padding: 10px;
 font-family: 'Poppins-Light';
+
 }
 
 .input2 {
@@ -66,6 +72,7 @@ font-family: 'Poppins-Light';
     height: 100px;
     resize: none;
     font-family: 'Poppins-Light';
+
 }
 
 .contact-submit {
@@ -86,6 +93,30 @@ cursor: pointer;
 .form {
     display: flex;
     flex-direction: column;
-    width: 200px;
+    
 }
 
+@media (min-width: 1000px) {
+.ContactScreen-main {
+    flex-direction: row;
+   padding-top: 100px;
+   padding-bottom: 100px;
+}
+
+.contactScreen-info p {
+    width: 60%;
+   
+}
+
+.contactScreen-btns {
+    max-width: 400px;
+}
+}
+
+@media (min-width: 1300px) {
+    .ContactScreen-main {
+        flex-direction: row;
+       padding-top: 100px;
+       padding-bottom: 200px;
+    }
+}

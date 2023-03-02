@@ -1,5 +1,7 @@
+import Contact from "../Components/contact";
 import Footer from "../Components/footer";
 import Header from "../Components/Header";
+import Menu from "../Components/menu";
 import './contactScreen.css';
 
 
@@ -32,6 +34,8 @@ function ContactScreen() {
             </div>
 
         </div>
+        <Contact />
+        <Menu />
         <Footer />
     </div>
     )
